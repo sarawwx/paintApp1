@@ -1,6 +1,13 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+:root {
+    --lilac: #8b85d5;
+    --green-light: #b3c293;
+    --green-medium: #86c009;
+    --green-dark: #62831c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #d5aeff;
+    background: var(--green-light);
 }
 
 .container {
