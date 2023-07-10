@@ -58,7 +58,8 @@ section {
 }
 
 .option:is(:hover, .active) img {
-    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+    /* filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%); */
+    filter: sepia(0%) saturate(800%) hue-rotate(900deg) brightness(160%) contrast(150%);
 }
 
 .option :where(span, label) {
@@ -68,7 +69,7 @@ section {
 }
 
 .option:is(:hover, .active) :where(span, label) {
-    color: #4A98F7;
+    color: var(--green-dark);
 }
 
 .option #fill-color {
@@ -78,7 +79,7 @@ section {
 }
 
 #fill-color:checked~label {
-    color: #4A98F7;
+    color: var(--green-dark);
 }
 
 .option #size-slider {
@@ -114,11 +115,11 @@ section {
 }
 
 .colors .option:nth-child(4) {
-    background-color: #6DD400;
+    background-color: #4A98F7;
 }
 
 .colors .option:nth-child(5) {
-    background-color: #4A98F7;
+    background-color: var(--green-dark);
 }
 
 .colors .option.selected::before {
@@ -168,8 +169,8 @@ section {
 }
 
 .buttons .save-img {
-    background: #4A98F7;
-    border: 1px solid #4A98F7;
+    background: var(--green-dark);
+    border: 1px solid var(--green-medium);
 }
 
 .drawing-board {
